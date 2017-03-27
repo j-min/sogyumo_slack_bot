@@ -57,6 +57,7 @@ class slackbot:
 
 
 if __name__ == '__main__':
+    token = open('./token').read()[:-1]
     logging.basicConfig(filename='./log',level=logging.DEBUG)
 
     bot = slackbot(token)
